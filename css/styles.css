@@ -1,9 +1,11 @@
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul, ol {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
 }
 
@@ -17,12 +19,25 @@ body {
     color: #434455;
     background-color: #FFF;
 }
+.container {
+    width: 1158px;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    margin-left: 0;  
+    margin-right: 0; 
+}
 /*Секція Navigation*/
 .top-header .container {
-    padding: 24px 156px;
-    max-width: 1158px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
 }
 .logo {
+    margin-right: 76px;
     text-transform: uppercase;
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
@@ -35,7 +50,12 @@ body {
 .logo-part {
     color: #2E2F42;
 }
-.navigation .nav-link {
+.list {
+    display: flex;
+    gap: 40px;
+}
+.nav-link {
+    display: block;
     color: #2E2F42;
     font-weight: 500;
     line-height: 1.5;
@@ -53,9 +73,16 @@ body {
 /*Секція Contacts*/
 
 .contacts {
-    font-style: normal
+    font-style: normal;
 }
-.contact-link{
+.contacts-menu {
+    display: flex;
+    gap: 40px;
+}
+.contact-link {
+    display: block;
+    padding-bottom: 24px;
+    padding-top: 24px;
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.32px;
