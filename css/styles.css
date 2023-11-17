@@ -23,21 +23,41 @@ body {
     width: 1158px;
     padding-left: 15px; 
     padding-right: 15px; 
-    margin-left: 0;  
-    margin-right: 0; 
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*Секція Navigation*/
 .top-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #E7E9FC;
 }
 .navigation {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .logo {
-    margin-right: 76px;
     text-transform: uppercase;
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
@@ -46,16 +66,19 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-decoration: none;
+    margin-right: 76px;
 }
 .logo-part {
     color: #2E2F42;
 }
-.list {
+.list-nav {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
 }
 .nav-link {
     display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #2E2F42;
     font-weight: 500;
     line-height: 1.5;
@@ -102,11 +125,19 @@ ul {
     color: #FFF;
     text-align: center;
     background-color: #2E2F42;
+
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
-.title-part .main-title {
+.main-title {
     font-size: 56px;
-    line-height: 107.143%;
+    line-height: 1.07;
     letter-spacing: 1.12px;
+
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .title-part .click {
     font-family: "Roboto", sans-serif;
@@ -114,9 +145,18 @@ ul {
     background-color: #4D5AE5;
     font-size: 16px;
     font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0.64px;
-    cursor: pointer
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #4D5AE5;
 }
 .click:hover,
 .click:focus {
@@ -132,6 +172,17 @@ ul {
     line-height: 111.111%;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+}
+.menu {
+    display: flex;
+    column-gap: 24px;
+}
+.menu-parts {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 .parts-title {
     color: #2e2f42;
