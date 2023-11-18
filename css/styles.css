@@ -203,13 +203,27 @@ ul {
 .our-team {
     background-color: #F4F4FD;
 }
+.menu-team {
+    display: flex;
+    column-gap: 24px;
+}
 .our-team-part {
     background-color: #FFFFFF;
+    width: calc(100%-72px)/4;
+    border-radius: 0px 0px 4px 4px;
+}
+.our-team .subtitle {
+    margin-bottom: 72px;
+}
+.about-person {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .our-team-part .parts-title {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 .our-team-part .list-description {
     letter-spacing: 0.32px;
@@ -219,8 +233,26 @@ ul {
 
 
 /*Секція Our portfolio */
-
-
+.our-portfolio .subtitle {
+    margin-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+.part-list {
+    width: calc(100%-48px)/3;
+    border-bottom: 1px solid #E7E9FC;
+    background: #FFF;
+}
+.about-part {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.our-portfolio .parts-title {
+    margin-bottom: 8px;
+}
 .part-list > .parts-title {
     line-height: 1.2;
     letter-spacing: 0.4px;
@@ -233,11 +265,18 @@ ul {
 
 .lower-part{
    background-color: #2E2F42; 
+   padding-top: 101.5px;
+   padding-bottom: 100px;
+}
+.lower-part .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .lower-part .logo-part {
     color: #f4f4fd;
 }
 .lower-part .description {
+    width: 264px;
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
